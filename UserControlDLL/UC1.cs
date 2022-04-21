@@ -25,10 +25,10 @@ namespace UserControlDLL
                 int a = 11;
                 int b = 1;
                 int c = a / b;
-                OnLog("test");
+                OnLog?.Invoke("test");
             }catch(Exception ex)
             {
-                OnError(ex);
+                OnError?.Invoke(ex);
             }
         }
     }
